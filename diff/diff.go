@@ -10,6 +10,7 @@ const (
 type Command struct {
     // Add, delete and skip
     Action Action
+    Char string
 }
 
 func Diff(s1, s2 string) []Command {
