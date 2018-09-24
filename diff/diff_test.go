@@ -29,7 +29,7 @@ func TestSomething(t *testing.T) {
     }
 
     for i, cmd := range commands {
-        if cmd.Action == expectedCommands[i].Action {
+        if cmd.Action != expectedCommands[i].Action {
             t.Errorf("The action at index %q is wrong.", i)
         }
     }
